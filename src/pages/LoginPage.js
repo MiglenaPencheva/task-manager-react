@@ -19,6 +19,7 @@ const loginForm = () => {
 
         try {
             await login(data);
+            console.log('logged in');
         } catch (error) {
             console.log(error.message);
         }
@@ -27,15 +28,15 @@ const loginForm = () => {
         <div>
             <h2>Вход към профила</h2>
 
-            <form class="auth-form" onSubmit={handleSubmit}>
+            <form className="auth-form" onSubmit={handleSubmit}>
 
                 <input type="text" className="auth-input" placeholder="потребителско име" name="username" />
-                <input type="password" className="auth-input" placeholder="парола" name="password" value="" />
+                <input type="password" className="auth-input" placeholder="парола" name="password" defaultValue="" />
                 <input type="submit" className="auth-btn" value="Вход" />
                 {/* {{!-- < a href="/auth/login"></> --}} */}
             </form >
 
-            <div class="redirect">Нямаш профил? <a className="redirect-link" href="/auth/register"><b>Регистрирай</b></a> свой профил.</div>
+            <div className="redirect">Нямаш профил? <a className="redirect-link" href="/auth/register"><b>Регистрирай</b></a> свой профил.</div>
         </div>
     );
 };

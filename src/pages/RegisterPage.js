@@ -6,7 +6,7 @@ const RegisterForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        const { username, password, rePassword } = e.target;
+        const { username, password, repeatPassword } = e.target;
 
         if (username.value === '') {
             throw new Error('Въведи потребителско име');
@@ -14,21 +14,22 @@ const RegisterForm = () => {
         if (password.value === '') {
             throw new Error('Въведи парола');
         }
-        if (rePassword.value === '') {
+        if (repeatPassword.value === '') {
             throw new Error('Въведи парола');
         }
-        if (password.value !== rePassword.value) {
+        if (password.value !== repeatPassword.value) {
             throw new Error('Паролите не съвпадат');
         }
 
         const data = {
             username: username.value,
             password: password.value,
-            repeatPassword: rePassword.value
+            repeatPassword: repeatPassword.value
         };
 
         try {
             await register(data);
+            console.log('registerred');
         } catch (error) {
             console.log(error.message);
         }
@@ -39,9 +40,9 @@ const RegisterForm = () => {
             <h2>Регистрирай профил</h2>
 
             <form onSubmit={handleSubmit} className="auth-form" action="/auth/register" method="POST">
-                <input type="text" className="auth-input" placeholder="потребителско име" name="username" value="" />
-                <input type="password" className="auth-input" placeholder="парола" name="password" value="" />
-                <input type="password" className="auth-input" placeholder="повтори паролата" name="repeatPassword" value="" />
+                <input type="text" className="auth-input" placeholder="потребителско име" name="username"  />
+                <input type="password" className="auth-input" placeholder="парола" name="password"  />
+                <input type="password" className="auth-input" placeholder="повтори паролата" name="repeatPassword"  />
                 {/* <a href="/auth/register">Регистрация</a> */}
                 <input type="submit" className="auth-btn" value="Регистрация" />
             </form>
