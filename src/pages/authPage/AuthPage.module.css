@@ -1,0 +1,107 @@
+h2 {
+    text-align: center;
+    margin: 0;
+    padding: 60px 10px 30px;
+    color: #73a5a5;
+    font-size: 24px;
+}
+@media screen and (max-width: 600px) {
+    h2 {
+        font-size: 20px;
+    }
+}
+
+h3 {
+    text-align: center;
+    margin: 0;
+    padding: 30px 10px;
+    color: #73a5a5;
+    font-size: 24px;
+}
+@media screen and (max-width: 600px) {
+    h3 {
+        font-size: 20px;
+    }
+}
+
+.auth-link {
+    display: block;
+    margin: 10px auto;
+    padding: 40px 10px;
+    width: 370px;
+    outline: none;
+    font-size: 24px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 2px;
+    background: #AFE4E4;
+    color: #f4fafa;
+    cursor: pointer;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    transition-duration: 0.4s;
+}
+@media screen and (max-width: 600px) {
+    .auth-link {
+        width: 240px;
+        font-size: 16px;
+    }
+}
+
+.auth-link:hover {
+    color: #607588;
+    font-size-adjust: inherit;
+    font-size: 110%;
+    background-color: #ffffff;
+}
+@media screen and (max-width: 600px) {
+    .auth-link:hover {
+        color: #607588;
+        font-size-adjust: inherit;
+        font-size: 110%;
+        background-color: #ffffff;
+    }
+}
+
+/* 
+.auth-btn {
+    display: inline-block;
+    padding: 8px 15px;
+    margin: 20px auto;
+    width: 330px;
+    border-width: 0px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 16px;
+    background: #AFE4E4;
+    color: #f4fafa;
+    cursor: pointer;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    transition-duration: 0.4s;
+    letter-spacing: 2px;
+}
+
+@media screen and (max-width: 600px) {
+    .auth-btn {
+        display: inline-block;
+        padding: 8px 15px;
+        margin: 20px auto;
+        width: 330px;
+        border-width: 0px;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 16px;
+        background: #AFE4E4;
+        color: #f4fafa;
+        cursor: pointer;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+        transition-duration: 0.4s;
+        letter-spacing: 2px;
+    }
+}
+.auth-btn:hover {
+    color: #607588;
+    font-size-adjust: inherit;
+    font-size:110%;
+    background-color: #ffffff;
+} */

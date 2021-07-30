@@ -1,16 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
-#root {
-  margin: auto;
-  padding: 0;
+html {
   font-family: 'Open Sans', sans-serif;
-  max-width: 900px;
-  padding: 10px;
   background-color: #E4F9F9;
-  min-height: 500px;
 }
 
-header {
+/* header {
   display: grid;
   grid-template-columns: 10% auto 10%;
   margin: 0;
@@ -414,7 +409,6 @@ a:link {
   margin: 10px auto;
   padding: 0%;
   border-radius: 10px;
-  /* text-decoration: underline; */
   width: 80%;
   box-shadow: 0 5px 10px #cccccc;
 }
@@ -519,4 +513,4 @@ footer {
 }
 .redirect-link:hover {
   font-style: italic;
-}
+} */

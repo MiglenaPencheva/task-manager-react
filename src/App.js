@@ -1,8 +1,8 @@
 import { Route, Switch } from 'react-router-dom';
 
-import AuthPage from './pages/AuthPage';
+import AuthPage from './pages/authPage/AuthPage';
 import RegisterPage from './pages/RegisterPage';
-import LoginPage from './pages/LoginPage';
+import LoginPage from './pages/loginPage/LoginPage';
 import CreateTask from './components/Create';
 
 import './App.css';
