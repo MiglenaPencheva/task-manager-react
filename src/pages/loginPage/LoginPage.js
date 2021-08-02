@@ -42,12 +42,14 @@ const LoginPage = () => {
                 <input 
                     className={style['auth-input']} 
                     type="text"
+                    required
                     placeholder="потребителско име" 
                     name="username" 
                     onChange={(e) => setUsername(e.target.value)} />
                 <input 
                     className={style['auth-input']} 
                     type="password" 
+                    required
                     placeholder="парола" 
                     name="password" 
                     onChange={(e) => setPassword(e.target.value)} />

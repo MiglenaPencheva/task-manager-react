@@ -5,7 +5,6 @@ import { NavLink } from 'react-router-dom';
 import authService from '../../services/authService';
 import style from '../loginPage/LoginPage.module.css';
 
-
 const RegisterPage = () => {
     const { login } = useContext(AuthContext);
     const history = useHistory();
@@ -54,18 +53,21 @@ const RegisterPage = () => {
                 <input 
                     className={style['auth-input']}
                     type="text" 
+                    required
                     placeholder="потребителско име" 
                     name="username"
                     onChange={(e) => setUsername(e.target.value)} />
                 <input 
                     className={style['auth-input']}
                     type="password" 
+                    required
                     placeholder="парола" 
                     name="password" 
                     onChange={(e) => setPassword(e.target.value)} />
                 <input 
                     className={style['auth-input']}
                     type="password" 
+                    required
                     placeholder="повтори паролата" 
                     name="repeatPassword" 
                     onChange={(e) => setPassword(e.target.value)} />
