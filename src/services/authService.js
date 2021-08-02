@@ -10,7 +10,7 @@ const login = async (body) => {
         return await res.json();
 
     } catch (error) {
-        return { msg: error };
+        return { message: error };
     }
 };
 
@@ -24,7 +24,7 @@ const register = async (body) => {
         return await res.json();
 
     } catch (error) {
-        return { msg: error };
+        return { message: error };
     }
 };
 
